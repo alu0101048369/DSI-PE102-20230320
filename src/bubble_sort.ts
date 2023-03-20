@@ -1,6 +1,13 @@
 import { SortAlgorithm } from "./sort"
 
+/**
+ * BubbleSort represents a sorter using Bubble Sort Algorithm
+ */
 export default class BubbleSort implements SortAlgorithm {
+  /**
+   * sort sorts the array provided in-place using the bubble sort algorithm.
+   * @param l List of numbers to sort.
+   */
   sort(list: number[]): void {
     for (let isSorted = false; !isSorted;) {
       isSorted = true
